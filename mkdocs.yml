@@ -1,0 +1,59 @@
+site_name: My Docs General
+site_url: https://Documentacion.mab.net.ar
+theme:  
+  name: material
+  custom_dir: overrides
+  font:
+    text: Merriweather Sans
+    code: Red Hat Mono
+  features:
+    - navigation.footer
+  icon:
+    logo: fontawesome/solid/b
+    repo: fontawesome/brands/github
+  palette:
+    # Dark Mode
+    - scheme: slate
+      toggle:
+        icon: material/weather-sunny
+        name: Dark mode
+      primary: green
+      accent: deep purple
+
+    # Light Mode
+    - scheme: default
+      toggle:
+        icon: material/weather-night
+        name: Light mode
+      primary: blue
+      accent: deep orange
+
+markdown_extensions:
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - admonition
+  - pymdownx.details
+
+
+extra:
+  social:
+    - icon: material/youtube
+      link: https://youtube.com
+    - icon: material/linkedin
+      link: https://linkedin.com
+copyright: Copyright &copy; 2024 James Willett

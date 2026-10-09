@@ -1,0 +1,23 @@
+<footer class="md-footer">
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      
+      <!-- Contenedor del Copyright Forzado -->
+      <div class="md-copyright">
+        <div class="md-copyright__highlight">
+          {% if config.extra.copyright %}
+            {{ config.extra.copyright }}
+          {% else %}
+            Copyright &copy; 2026 My Docs General
+          {% endif %}
+        </div>
+      </div>
+
+      <!-- Redes Sociales -->
+      {% if config.extra.social %}
+        {% include "partials/social.html" %}
+      {% endif %}
+
+    </div>
+  </div>
+</footer>
